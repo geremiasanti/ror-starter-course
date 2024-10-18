@@ -1,5 +1,6 @@
-def hello
-  puts "Hello world" 
+def hello(anything)
+  puts anything
 end
 
-hello
+hello "Hello arg"
+hello "Hello other arg"
