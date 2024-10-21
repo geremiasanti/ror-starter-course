@@ -1,3 +1,5 @@
 puts "Inserire nome:"
 name = gets.chomp
-puts "Il nome inserito e': #{name}"
+puts "Inserire cognome:"
+surname = gets.chomp
+puts "Il tuo nome completo e': #{name} #{surname}"
