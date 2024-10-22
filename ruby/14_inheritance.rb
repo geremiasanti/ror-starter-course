@@ -1,4 +1,12 @@
+module Destructable
+  def destroy()
+    puts("classe \"#{self.class.name}\" istanza \"#{self.name}\" distruttone dal moduloneeee!")
+  end
+end
+
 class User
+  include Destructable
+
   attr_accessor :name
 
   def initialize(name)
@@ -43,5 +51,8 @@ admin.name = "Geremione"
 puts "Name from admin: #{admin.name}"
 print "\n"
 
-User.static_method;
-Buyer.static_method;
+User.static_method
+Buyer.static_method
+print "\n"
+
+admin.destroy
