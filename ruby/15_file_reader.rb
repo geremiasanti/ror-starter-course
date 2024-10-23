@@ -8,6 +8,3 @@ class FileReader
     file_content = File.read(@file)
   end
 end
-
-reader = FileReader.new '00_helloworld.rb'
-puts reader.read
