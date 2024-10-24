@@ -1,0 +1,2 @@
+to install ruby-2.7.x
+	https://github.com/rvm/rvm/issues/5209#issuecomment-1114159447
