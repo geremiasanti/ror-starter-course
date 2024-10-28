@@ -17,6 +17,10 @@
       <td>
         <%= link_to 'Visualizza', todo_path(todo) %>
         <%= link_to 'Modifica', edit_todo_path(todo) %>
+        <%= link_to 'Elimina', todo_path(todo),
+          method: :delete,
+          data: {confirm: 'Sicuro sicuro?'}
+        %>
       </th>
     </tr>
   <% end %>
